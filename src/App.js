@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Top from './pages/Dashboard/Dashboard';
+import Head from './components/header/head';
+import Login from './pages/Login/Login';
+import Marks from './pages/Marks/Marks';
+import MarksForm from './pages/Marks/MarksForm';
+import Data from './pages/Data/Data'
+import Change from './pages/Change/Change'
+import Delete from './pages/Delete/Delete'
+
+
+// import '../src/Backend/server'
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Head />
+
+      <Routes>
+        <Route path='/' element={<Login />}></Route>
+        <Route path='Dashboard' element={<Top />}></Route>
+        <Route path='Marks' element={<Marks />}></Route>
+        <Route path='MarksForm' element={<MarksForm />}></Route>
+        <Route path='Data' element={<Data/>}></Route>
+        <Route path='Change' element={<Change/>}></Route>
+        <Route path='Delete' element={<Delete/>}></Route>
+
+      </Routes>
+
+      {/* <Top /> */}
     </div>
   );
 }

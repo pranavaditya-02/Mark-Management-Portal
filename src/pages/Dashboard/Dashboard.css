@@ -1,0 +1,121 @@
+/* Dashboard.css */
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+ }
+ 
+ /* Dashboard container */
+ .dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+ }
+ 
+ /* Navigation bar */
+ .navbar {
+  background-color: #333;
+  color: white;
+  width: 200px; /* Set a fixed width for the navbar */
+ }
+ 
+ /* Add this rule to create space between the icon and the text */
+ .icon-spacing {
+  margin-right: 10px; /* Adjust the value as needed */
+ }
+ 
+ .navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+ 
+ .navbar li {
+  padding: 30px 0; /* Adjust padding for vertical spacing */
+ }
+ 
+ .navbar li a {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: flex-start; /* Align items to the start of the container */
+  color: white;
+  text-align: left; /* Align text to the left */
+  text-decoration: none;
+  width: 100%; /* Ensures the link takes up the full width of the list item */
+  padding-left: 20px; /* Add some padding to the left to make space for the icon */
+ }
+ 
+ .navbar li a:hover {
+  background-color: #111;
+ }
+ 
+ /* Content area */
+ .content {
+  flex-grow: 1;
+  padding: 20px;
+ }
+ 
+ /* Cards */
+ /* Dashboard.css */
+.cards {
+  display: flex;
+  justify-content: space-around; /* Adjusts the spacing between cards */
+  flex-wrap: wrap; /* Allows the cards to wrap onto the next line if there's not enough space */
+  gap: 20px; /* Adds space between the cards */
+ }
+ 
+ .card {
+  background-color: #f8f9fa; /* Light background color */
+  border: 1px solid #dee2e6; /* Light border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  width: 300px; /* Width of each card */
+  box-shadow: 0 4px 8px 0 rgb(255, 255, 255); /* Optional: Adds a shadow for depth */
+  transition: 0.3s; /* Optional: Adds a transition effect for hover */
+ }
+ 
+ .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Optional: Increases the shadow on hover */
+ }
+ 
+ /* Optional: Media query for smaller screens */
+ @media (max-width: 768px) {
+  .cards {
+     flex-direction: column; /* Stacks the cards vertically on smaller screens */
+  }
+ }
+ 
+ .card h3 {
+  margin-top: 0;
+ }
+ 
+ .card p {
+  margin-bottom: 0;
+ }
+ 
+ /* Responsive styles */
+ @media (max-width: 768px) {
+  .navbar {
+     width: 100%; /* Make the navbar full width on smaller screens */
+     height: auto; /* Adjust the height as needed */
+  }
+ 
+  .navbar li {
+     padding: 20px 0; /* Reduce vertical padding on smaller screens */
+  }
+ 
+  .content {
+     padding: 10px; /* Reduce padding on smaller screens */
+  }
+ 
+  .cards {
+     flex-direction: column; /* Stack cards vertically on smaller screens */
+  }
+ 
+  .card {
+     width: 100%; /* Make cards full width on smaller screens */
+     margin: 5px 0; /* Adjust margin for better spacing */
+  }
+ }
+ 
