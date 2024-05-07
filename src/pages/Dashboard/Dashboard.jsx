@@ -15,7 +15,7 @@ export default function Dashboard() {
         <ul>
         <div className="navbar">
         <ul>
-        <li><Link to="/page1"><span className="icon-spacing"><FontAwesomeIcon icon={faTachometerAlt} /></span> Dashboard</Link></li>
+        <li><Link to="/Dashboard"><span className="icon-spacing"><FontAwesomeIcon icon={faTachometerAlt} /></span> Dashboard</Link></li>
         <li><Link to="/Data"><span className="icon-spacing"><FontAwesomeIcon icon={faUser} /></span> User data</Link></li>
         <li><Link to="/Marks"><span className="icon-spacing"><FontAwesomeIcon icon={faBook} /></span> User Marks</Link></li>
         <li><Link to="/MarksForm"><span className="icon-spacing"><FontAwesomeIcon icon={faPlus} /></span> Add Marks</Link></li>
